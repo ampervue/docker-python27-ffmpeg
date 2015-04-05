@@ -5,4 +5,5 @@ tmp/*
 *.jpg
 *.mp3
 *.mp4
+*~
 .idea/

@@ -3,6 +3,7 @@ log/*
 tmp/*
 doc/*
 spec/*
+*~
 .git/
 .bundle*
 .idea/

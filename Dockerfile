@@ -11,10 +11,16 @@ ENV LC_ALL en_US.UTF-8
 
 ENV YASM_VERSION    1.3.0
 
-# Basic libraries needed for Python and for FFMPEG
+# =============================================================
+# This is an image based on Ubuntu (trusty)
+#      with Python 2.7
+#      and  FFMPEG (latest from source)
+#
+# Basic libraries needed for Python 2.7 and for FFMPEG
 # FFMPEG image is based on:
 #      https://github.com/cellofellow/ffmpeg
 #      https://trac.ffmpeg.org/wiki/CompilationGuide/Ubuntu
+# =============================================================
 
 RUN echo deb http://archive.ubuntu.com/ubuntu precise universe multiverse >> /etc/apt/sources.list; \
     apt-get update -qq && apt-get install -y --force-yes \
