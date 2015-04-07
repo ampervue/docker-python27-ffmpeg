@@ -1,5 +1,7 @@
 __author__ = 'David Karchmer'
 
+# https://github.com/ampervue/docker-python27-ffmpeg
+
 import sys
 import argparse
 import os

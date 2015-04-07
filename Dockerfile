@@ -1,6 +1,8 @@
 FROM ubuntu:trusty
 
-MAINTAINER David Karchmer <dkarchmer@ampervue.com>
+# https://github.com/ampervue/docker-python27-ffmpeg
+
+MAINTAINER David Karchmer <dkarchmer@gmail.com>
 
 # Set Locale
 
