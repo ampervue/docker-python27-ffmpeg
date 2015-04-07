@@ -1,4 +1,5 @@
-# python27-ffmpeg
+# docker-python27-ffmpeg
+
 A Docker image running Ubuntu:trusty with Python 2.7 and latest FFMPEG (built from source)
 
 ### To Build
@@ -11,7 +12,7 @@ docker build -t <imageName> .
 
 Docker Hub: https://registry.hub.docker.com/u/dkarchmervue/python27-ffmpeg/
 
-Source and example: https://bitbucket.org/ampervue/python27-ffmpeg
+Source and example: https://github.com/ampervue/docker-python27-ffmpeg
 
 ~~~~
 docker pull dkarchmervue/python27-ffmpeg
@@ -23,7 +24,11 @@ docker run -ti dkarchmervue/python27-ffmpeg ffmpeg
 As an example, the python script uses FFMPEG to download a movie from the web and create a 100x100 thumbnail
 
 ~~~~
-git clone https://dkarchmer-vue@bitbucket.org/ampervue/python27-ffmpeg.git
+# Pull image
+docker pull dkarchmervue/python27-ffmpeg
+
+# Get example files and build new image
+git clone https://github.com/ampervue/docker-python27-ffmpeg
 cd example
 docker build -t thumbnail .
 docker run --rm -ti thumbnail --input http://techslides.com/demos/sample-videos/small.mp4
