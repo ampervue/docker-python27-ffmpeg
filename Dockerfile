@@ -35,6 +35,7 @@ RUN echo deb http://archive.ubuntu.com/ubuntu precise universe multiverse >> /et
     libass-dev \
     libgpac-dev \
     libmp3lame-dev \
+    libfaac-dev \
     libfontconfig-dev \
     libfreetype6-dev \
     libfribidi-dev \

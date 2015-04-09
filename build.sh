@@ -110,6 +110,7 @@ cd /usr/local/src/ffmpeg
 ./configure --extra-libs="-ldl" \
             --enable-gpl \
             --enable-libass \
+            --enable-libfaac \
             --enable-libfdk-aac \
             --enable-libfontconfig \
             --enable-libfreetype \
