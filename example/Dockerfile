@@ -12,7 +12,7 @@ MAINTAINER David Karchmer <dkarchmer@gmail.com>
 # git clone https://dkarchmer-vue@bitbucket.org/ampervue/python27-ffmpeg.git
 # cd example
 # docker build -t thumbnail .
-# docker run --rm -ti thumbnail --input http://techslides.com/demos/sample-videos/small.mp4
+# docker run --rm -ti thumbnail --file http://techslides.com/demos/sample-videos/small.mp4
 #
 # # Mount current directory on container so that file can be written back to host
 # docker run --rm -ti -v ${PWD}:/code thumbnail --file http://techslides.com/demos/sample-videos/small.mp4
