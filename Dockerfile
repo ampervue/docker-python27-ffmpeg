@@ -1,7 +1,7 @@
 FROM ubuntu:trusty
 
-# https://github.com/ampervue/docker-ffmpeg
-# https://hub.docker.com/r/dkarchmervue/ffmpeg/
+# https://github.com/ampervue/docker-python27-ffmpeg
+# https://hub.docker.com/r/dkarchmervue/python27-ffmpeg/
 
 MAINTAINER David Karchmer <dkarchmer@ampervue.com>
 
@@ -35,7 +35,7 @@ RUN apt-get -qq remove ffmpeg
 RUN apt-get purge -y python.*
 
 # Add the following two dependencies if you want to use --enable-gnutls in FFPMEG: gnutls-bin
-RUN echo deb http://archive.ubuntu.com/ubuntu precise universe multiverse >> /etc/apt/sources.list; \
+RUN echo deb http://archive.ubuntu.com/ubuntu trusty universe multiverse >> /etc/apt/sources.list; \
     apt-get update -qq && apt-get install -y --force-yes \
     ant \
     autoconf \
