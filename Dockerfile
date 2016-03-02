@@ -92,6 +92,7 @@ RUN ./autogen.sh \
 # Build ffmpeg.
 # =================================
 
+#            --enable-libx265 - Remove until we can figure out compile error
 WORKDIR /usr/local/src/ffmpeg
 RUN ./configure --extra-libs="-ldl" \
             --enable-gpl \
@@ -106,7 +107,6 @@ RUN ./configure --extra-libs="-ldl" \
             --enable-libvorbis \
             --enable-libvpx \
             --enable-libx264 \
-            --enable-libx265 \
             --enable-nonfree \
             --enable-openssl \
     && make -j ${NUM_CORES} \
